@@ -9,7 +9,7 @@ import org.litepal.crud.DataSupport;
 public class County extends DataSupport {
     private int id;
     private String CountyName;
-    private int weatherId;
+    private String weatherId;
     private int cityId;
 
     public int getId(){
@@ -24,10 +24,10 @@ public class County extends DataSupport {
     public void setCountyName(String CountyName){
         this.CountyName=CountyName;
     }
-    public int getWeatherId(){
+    public String getWeatherId(){
         return weatherId;
     }
-    public void setWeatherId(int id){
+    public void setWeatherId(String id){
         this.weatherId=id;
     }
     public void setCityId(int id){
